@@ -3,6 +3,7 @@ let player = {
     chips: 200
 }
 
+// create card list because we expect dynamic number of cards
 let cards = []
 let sum = 0
 let hasBlackJack = false
@@ -13,6 +14,7 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 let playerEl = document.getElementById("player-el")
 
+// displays player name and their chips
 playerEl.textContent = player.name + ": $" + player.chips
 
 function getRandomCard() {
@@ -63,3 +65,4 @@ function newCard() {
         renderGame()        
     }
 }
+
